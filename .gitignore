@@ -14,3 +14,5 @@ fomod/ModuleConfig.xml
 fomod/info.xml
 
 unbalanceCargo.jpg
+*.pak
+*.7z
