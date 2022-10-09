@@ -1,5 +1,5 @@
-ModName = "InventoryRebalance"
-FilePath = {"METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCE.MBIN", "METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"}
+ModName  = "InventoryRebalance"
+FilePath = {"METADATA/GAMESTATE/DEFAULTINVENTORYBALANCE.MBIN", "METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN"}
 
 --NORMAL
 SubstanceDefaultStackSizeNormal = 50000	-- Stacksize of substances (Original 9999)
@@ -35,77 +35,77 @@ SubstanceAndProcductStackSizeLimit = 999999 -- (Original 9999)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] 			= ModName..".pak",
-  ["MOD_DESCRIPTION"]		= "Rebalance of InvetorySize and Deconstruction cost",
-  ["MOD_AUTHOR"]			= "Jackty89",
-  ["MODIFICATIONS"] 		=
+    ["MOD_FILENAME"]        = ModName..".pak",
+    ["MOD_DESCRIPTION"]     = "Rebalance of InvetorySize and Deconstruction cost",
+    ["MOD_AUTHOR"]          = "Jackty89",
+    ["MODIFICATIONS"]       =
     {
-		{
-			["MBIN_CHANGE_TABLE"] 	=
-			{
-				{
-					["MBIN_FILE_SOURCE"] 	= FilePath[1],
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"DefaultSubstanceMaxAmount",			        SubstanceDefaultStackSizeNormal},
-								{"DefaultProductMaxAmount",                     ProductDefaultStackSizeNormal},
-								{"CargoSubstanceStorageMultiplier",             StackMultiPlierFreighterAndCargoNormal},
-								{"CargoProductStorageMultiplier",		        StackMultiPlierFreighterAndCargoNormal},
-								{"FreighterSubstanceStorageMultiplier",         StackMultiPlierFreighterAndCargoNormal},
-								{"FreighterProductStorageMultiplier",	        StackMultiPlierFreighterAndCargoNormal},
-								{"ShipSubstanceStorageMultiplier",              StackMultiPlierExosuitAndShipNormal},
-								{"ShipProductStorageMultiplier",                StackMultiPlierExosuitAndShipNormal},
-								{"ChestSubstanceStorageMultiplier",             StackMultiPlierExosuitAndShipNormal},
-								{"ChestProductStorageMultiplier",               StackMultiPlierExosuitAndShipNormal},
-								{"BaseCapsuleSubstanceStorageMultiplier",       StackMultiPlierFreighterAndCargoNormal},
-								{"BaseCapsuleProductStorageMultiplier",         StackMultiPlierFreighterAndCargoNormal},
-								{"DefaultSubstanceStorageMultiplier",           StackMultiPlierExosuitAndShipNormal},
-								{"DefaultProductStorageMultiplier",             StackMultiPlierExosuitAndShipNormal},
-								{"SubstanceMaxAmountLimit",                     SubstanceAndProcductStackSizeLimit},
-								{"ProductMaxAmountLimit",                       SubstanceAndProcductStackSizeLimit},
-								{"PlayerPersonalInventoryTechWidth",            TechWidthNormal},
+        {
+            ["MBIN_CHANGE_TABLE"]   =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]    = FilePath[1],
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "",
+                            ["VALUE_CHANGE_TABLE"] 	=
+                            {
+                                {"DefaultSubstanceMaxAmount",                   SubstanceDefaultStackSizeNormal},
+                                {"DefaultProductMaxAmount",                     ProductDefaultStackSizeNormal},
+                                {"CargoSubstanceStorageMultiplier",             StackMultiPlierFreighterAndCargoNormal},
+                                {"CargoProductStorageMultiplier",               StackMultiPlierFreighterAndCargoNormal},
+                                {"FreighterSubstanceStorageMultiplier",         StackMultiPlierFreighterAndCargoNormal},
+                                {"FreighterProductStorageMultiplier",           StackMultiPlierFreighterAndCargoNormal},
+                                {"ShipSubstanceStorageMultiplier",              StackMultiPlierExosuitAndShipNormal},
+                                {"ShipProductStorageMultiplier",                StackMultiPlierExosuitAndShipNormal},
+                                {"ChestSubstanceStorageMultiplier",             StackMultiPlierExosuitAndShipNormal},
+                                {"ChestProductStorageMultiplier",               StackMultiPlierExosuitAndShipNormal},
+                                {"BaseCapsuleSubstanceStorageMultiplier",       StackMultiPlierFreighterAndCargoNormal},
+                                {"BaseCapsuleProductStorageMultiplier",         StackMultiPlierFreighterAndCargoNormal},
+                                {"DefaultSubstanceStorageMultiplier",           StackMultiPlierExosuitAndShipNormal},
+                                {"DefaultProductStorageMultiplier",             StackMultiPlierExosuitAndShipNormal},
+                                {"SubstanceMaxAmountLimit",                     SubstanceAndProcductStackSizeLimit},
+                                {"ProductMaxAmountLimit",                       SubstanceAndProcductStackSizeLimit},
+                                {"PlayerPersonalInventoryTechWidth",            TechWidthNormal},
                                 {"PlayerPersonalInventoryTechHeight",           TechHeightNormal},
-								{"DeconstructRefundPercentage",                 RefundNormal}
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= FilePath[2],
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"DefaultSubstanceMaxAmount",			        SubstanceDefaultStackSizeSurvival},
-								{"DefaultProductMaxAmount",                     ProductDefaultStackSizeSurvival},
-								{"CargoSubstanceStorageMultiplier",             StackMultiPlierExosuitCargoSurvival},
-								{"CargoProductStorageMultiplier",		        ProductStackMutiplierExosuitCargoAndShip},
-								{"FreighterSubstanceStorageMultiplier",         StackMultiPlierFreighterAndContainerSurvival},
-								{"FreighterProductStorageMultiplier",	        ProductStackMutiplierFreighterAndContainer},
-								{"ShipSubstanceStorageMultiplier",              StackMultiPlierShipSurvival},
-								{"ShipProductStorageMultiplier",                ProductStackMutiplierExosuitCargoAndShip},
-								{"ChestSubstanceStorageMultiplier",             StackMultiPlierFreighterAndContainerSurvival},
-								{"ChestProductStorageMultiplier",               ProductStackMutiplierFreighterAndContainer},
-								{"BaseCapsuleSubstanceStorageMultiplier",       StackMultiPlierFreighterAndContainerSurvival},
-								{"BaseCapsuleProductStorageMultiplier",         ProductStackMutiplierFreighterAndContainer},
-								{"DefaultSubstanceStorageMultiplier",           StackMultiPlierExosuitInvetorySurvival},
-								{"DefaultProductStorageMultiplier",             ProductStackMultiPlierExosuitInvetorySurvival},
-								{"SubstanceMaxAmountLimit",                     SubstanceAndProcductStackSizeLimit},
-								{"ProductMaxAmountLimit",                       SubstanceAndProcductStackSizeLimit},
-								{"PlayerPersonalInventoryTechWidth",            TechWidthSurvival},
+                                {"DeconstructRefundPercentage",                 RefundNormal}
+                            }
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]    = FilePath[2],
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "",
+                            ["VALUE_CHANGE_TABLE"] 	=
+                            {
+                                {"DefaultSubstanceMaxAmount",                   SubstanceDefaultStackSizeSurvival},
+                                {"DefaultProductMaxAmount",                     ProductDefaultStackSizeSurvival},
+                                {"CargoSubstanceStorageMultiplier",             StackMultiPlierExosuitCargoSurvival},
+                                {"CargoProductStorageMultiplier",               ProductStackMutiplierExosuitCargoAndShip},
+                                {"FreighterSubstanceStorageMultiplier",         StackMultiPlierFreighterAndContainerSurvival},
+                                {"FreighterProductStorageMultiplier",           ProductStackMutiplierFreighterAndContainer},
+                                {"ShipSubstanceStorageMultiplier",              StackMultiPlierShipSurvival},
+                                {"ShipProductStorageMultiplier",                ProductStackMutiplierExosuitCargoAndShip},
+                                {"ChestSubstanceStorageMultiplier",             StackMultiPlierFreighterAndContainerSurvival},
+                                {"ChestProductStorageMultiplier",               ProductStackMutiplierFreighterAndContainer},
+                                {"BaseCapsuleSubstanceStorageMultiplier",       StackMultiPlierFreighterAndContainerSurvival},
+                                {"BaseCapsuleProductStorageMultiplier",         ProductStackMutiplierFreighterAndContainer},
+                                {"DefaultSubstanceStorageMultiplier",           StackMultiPlierExosuitInvetorySurvival},
+                                {"DefaultProductStorageMultiplier",             ProductStackMultiPlierExosuitInvetorySurvival},
+                                {"SubstanceMaxAmountLimit",                     SubstanceAndProcductStackSizeLimit},
+                                {"ProductMaxAmountLimit",                       SubstanceAndProcductStackSizeLimit},
+                                {"PlayerPersonalInventoryTechWidth",            TechWidthSurvival},
                                 {"PlayerPersonalInventoryTechHeight",           TechHeightSurvival},
                                 {"DeconstructRefundPercentage",                 RefundSurvival}
-							}
-						}
-					}
-				}
+                            }
+                        }
+                    }
+                }
             }
-		}
+        }
     }
 }
