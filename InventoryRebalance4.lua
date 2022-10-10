@@ -11,15 +11,15 @@ SubstanceCargoSizeStandard               = 100000
 ProductInventorySizeStandard             = 50
 ProductCargoSizeStandard                 = 100
 
--- Restriced == Survival/Perma
-SubstanceInventorySizeRestriced          = 500
-SubstanceCargoSizeRestriced              = 1000
-SubstanceShipInventorySizeRestriced      = 2000
-SubstanceShipCargoSizeRestriced          = 2000
-SubstanceFreighterInventorySizeRestriced = 5000
-SubstanceFreighterCargoSizeRestriced     = 5000
-SubstanceVehicleInventorySizeRestriced   = 2000
-SubstanceChestAndCapSizeRestriced        = 5000
+-- Restricted == Survival/Perma
+SubstanceInventorySizeRestricted          = 500
+SubstanceCargoSizeRestricted              = 1000
+SubstanceShipInventorySizeRestricted      = 2000
+SubstanceShipCargoSizeRestricted          = 2000
+SubstanceFreighterInventorySizeRestricted = 5000
+SubstanceFreighterCargoSizeRestricted     = 5000
+SubstanceVehicleInventorySizeRestricted   = 2000
+SubstanceChestAndCapSizeRestricted        = 5000
 
 ProductInventorySizeRestricted           = 5
 ProductCargoSizeRestricted               = 10
@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"UIPopup",           ProductInventorySizeStandard},
                             }
                         },
-                        -- Restriced == Survival/Perma
+                        -- Restricted == Survival/Perma
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -105,18 +105,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                -- {"Inventory",         SubstanceInventorySizeRestriced},
-                                -- {"Personal",          SubstanceInventorySizeRestriced},
-                                {"PersonalCargo",     SubstanceCargoSizeRestriced},
-                                {"Ship",              SubstanceShipInventorySizeRestriced},
-                                {"ShipCargo",         SubstanceShipCargoSizeRestriced},
-                                {"Freighter",         SubstanceFreighterInventorySizeRestriced},
-                                {"FreighterCargo",    SubstanceFreighterCargoSizeRestriced},
-                                {"Vehicle",           SubstanceVehicleInventorySizeRestriced},
-                                {"Chest",             SubstanceChestAndCapSizeRestriced},
-                                {"BaseCapsule",       SubstanceChestAndCapSizeRestriced},
-                                -- {"MaintenanceObject", SubstanceInventorySizeRestriced},
-                                -- {"UIPopup",           SubstanceInventorySizeRestriced},
+                                -- {"Inventory",         SubstanceInventorySizeRestricted},
+                                -- {"Personal",          SubstanceInventorySizeRestricted},
+                                {"PersonalCargo",     SubstanceCargoSizeRestricted},
+                                {"Ship",              SubstanceShipInventorySizeRestricted},
+                                {"ShipCargo",         SubstanceShipCargoSizeRestricted},
+                                {"Freighter",         SubstanceFreighterInventorySizeRestricted},
+                                {"FreighterCargo",    SubstanceFreighterCargoSizeRestricted},
+                                {"Vehicle",           SubstanceVehicleInventorySizeRestricted},
+                                {"Chest",             SubstanceChestAndCapSizeRestricted},
+                                {"BaseCapsule",       SubstanceChestAndCapSizeRestricted},
+                                -- {"MaintenanceObject", SubstanceInventorySizeRestricted},
+                                -- {"UIPopup",           SubstanceInventorySizeRestricted},
                             }
                         },
                         {
