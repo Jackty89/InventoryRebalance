@@ -1,7 +1,7 @@
 ModName                                  = "InventoryRebalance"
 
 GCGAMEPLAYGLOBALS                        = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
-INVENTORYTABLE                           = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
+-- INVENTORYTABLE                           = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
 SubstanceAndProcductSizeLimit            = 9999999
 
@@ -12,7 +12,7 @@ ProductInventorySizeStandard             = 50
 ProductCargoSizeStandard                 = 100
 
 -- Restricted == Survival/Perma
-SubstanceInventorySizeRestricted          = 500
+-- SubstanceInventorySizeRestricted          = 500
 SubstanceCargoSizeRestricted              = 1000
 SubstanceShipInventorySizeRestricted      = 2000
 SubstanceShipCargoSizeRestricted          = 2000
@@ -21,8 +21,8 @@ SubstanceFreighterCargoSizeRestricted     = 5000
 SubstanceVehicleInventorySizeRestricted   = 2000
 SubstanceChestAndCapSizeRestricted        = 5000
 
-ProductInventorySizeRestricted           = 5
-ProductCargoSizeRestricted               = 10
+-- ProductInventorySizeRestricted           = 5
+-- ProductCargoSizeRestricted               = 10
 ProductShipInventorySizeRestricted       = 10
 ProductShipCargoSizeRestricted           = 10
 ProductFreighterInventorySizeRestricted  = 25
